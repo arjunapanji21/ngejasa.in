@@ -1,7 +1,7 @@
 const Footer = () => {
     return (
       <footer>
-        Copyright 2021 ngejasa.in
+        &copy;2021 <a href="https://instagram.com/ngejasa.in/" target="_blank">ngejasa.in</a>
       </footer>
     );
   }

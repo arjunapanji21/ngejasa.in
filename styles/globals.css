@@ -1,29 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
 
 body {
-  background: #f2f2f2;
+  margin: auto;
+  background: #fff;
   color: #333;
   font-family: "Nunito";
 }
+
+body * {
+  transition: 0.25s;
+}
+
 a {
-  color: #333;
+  color: #fff;
+  font-weight: bold;
   text-decoration: none;
 }
+
 .content {
   max-width: 960px;
   margin: 0 auto;
 }
+
 nav {
-  margin: 10px auto 80px;
+  margin: 10px auto 10px;
   padding: 10px 0;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: #fff;
 }
+
+nav .nav-menu{
+  padding: 15px;
+}
+
 nav a {
   margin-left: 12px;
+  border-left: 2px solid #208186;
+  padding: 10px;
+  color: #001314;
 }
+
+nav a:hover {
+  background-color: #208186;
+  color: #fff;
+  font-weight: bold;
+  border-left: 3px solid #001314;
+}
+
 nav .logo {
   margin-right: auto;
   font-size: 32px;
@@ -31,6 +60,11 @@ nav .logo {
   border-bottom: 3px solid #208186;
   color: #001314;
 }
+
+#services{
+  padding-bottom: 30px;
+}
+
 footer {
   display: block;
   text-align: center;
@@ -47,4 +81,30 @@ footer {
 .not-found a {
   color: #4979ff;
   text-decoration: underline;
+}
+
+footer a{
+  color: #333;
+}
+
+@media only screen and (max-width: 600px){
+  nav{
+    flex-direction: column;
+  }
+
+  nav .logo {
+    margin: auto;
+    font-size: 32px;
+    font-weight: bold;
+    border-bottom: 3px solid #208186;
+    color: #001314;
+  }
+
+  #services{
+    padding-bottom: 80px;
+  }
+
+  body{
+    width: 95%;
+  }
 }

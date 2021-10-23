@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
     <head>
-      <title>ngejasa.in | home</title>
+      <title>ngejasa.in</title>
       <meta name="keywords" content="ngejasa"/>
     </head>
       <div>

@@ -9,6 +9,7 @@ export default function Home() {
     <head>
       <title>ngejasa.in</title>
       <meta name="keywords" content="ngejasa"/>
+      <link rel="shortcut icon" href="/icon.png" />
     </head>
       <div>
         <div className={styles.header}>

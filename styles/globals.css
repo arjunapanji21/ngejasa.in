@@ -87,6 +87,16 @@ footer a{
   color: #333;
 }
 
+.toTop a{
+  font-style: italic;
+  text-decoration: none;
+  font-weight: lighter;
+}
+
+.toTop a:hover{
+  font-style: normal;
+}
+
 @media only screen and (max-width: 600px){
   nav{
     flex-direction: column;
